@@ -1,0 +1,32 @@
+@import url("Components/banners.css");
+@import url("Components/cards.css");
+@import url("Components/footer.css");
+@import url("Components/btn.css");
+@import url("Components/nav.css");
+@import url("Components/map.css");
+
+.row1 {
+  margin-bottom: 50px;
+}
+
+.assets{
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.subtitle{
+  margin-top: 20px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+  margin-top: 20px;
+}
+
+.title_map{
+  text-align: center;
+  margin-top: 50px;
+}

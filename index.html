@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page d'Henri de Montmarin</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%),
+ url('images/Marseille 2.jpg');">
+				
+	<div class="banner-content">
+		<h1>Marseille, un carrefour culturel et millénaire au coeur de la Mediterranée</h1>
+		<a href="http://www.marseille.fr/" target="_blank"><button class="btn-treehouse">La ville de Marseille</button></a>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row row1">
+		<div class="col-xs-12 col-sm-4">
+			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/Marseille.jpg');">
+			  <div class="card-category">Mecenat</div>
+			  <div class="card-description">
+			    <h2>Histoire du mécénat </h2>
+			    <p>Le mécénat et les défis du digital</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/essaouira 2.jpg');">
+			  <div class="card-category">Poeme</div>
+			  <div class="card-description">
+			    <h2>Une soirée</h2>
+			    <p>Petit exercice de style sans Raymond Queneau</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/MUCEM.jpg');">
+			  <div class="card-category">Marseille : carrefour culturel</div>
+			  <div class="card-description">
+			    <h2>MUCEM</h2>
+			    <p>Les enjeux d'une dynamisation</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- map --> 
+    	<div class="title_map">
+    		<h2 >En decouvrir plus sur la ville de Marseille</h2>
+    	</div>
+    <div class="main-container">
+      <div class="results-container">
+        <div class="card" style="background-image: url(images/Charite.jpg)">La vieille Charité</div>
+        <div class="card" style="background-image: url(images/Musee.jpg)">Musée des Beaux Arts de Marseille</div>
+        <div class="card" style="background-image: url(images/Garde.jpg)">Basilique Notre Dame de la Garde</div>
+        <div class="card" style="background-image: url(images/If.jpg)">Chateau d'If</div>
+        <div class="card" style="background-image: url(images/MUCEM.jpg)">MUCEM</div>
+        <div class="card" style="background-image: url(images/Calanques.jpg)">Calanques</div>
+        <div class="card" style="background-image: url(images/Major.jpg)">La Cathedrale de la Major</div>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+
+<div class="footer">
+  	<div class="footer-links">
+	    <a href="#"><i class="fa fa-github"></i></a>
+	    <a href="#"><i class="fa fa-instagram"></i></a>
+	    <a href="#"><i class="fa fa-facebook"></i></a>
+	    <a href="#"><i class="fa fa-twitter"></i></a>
+	    <a href="#"><i class="fa fa-linkedin"></i></a>
+  	</div>
+  	<div class="footer-copyright">
+   		This footer is made with <i class="fa fa-heart"></i> by Henri de Montmarin
+  	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.300000, lng: 5.400000},
+          scrollwheel: false,
+          zoom: 8
+        });
+      }
+    </script>
+    <!-- Gmaps JavaScript -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdggYNvJSMHN9aaQ9oK-_5Rj9x74sZyTY&callback=initMap"></script>
+
+
+
+</body>
+</html>
